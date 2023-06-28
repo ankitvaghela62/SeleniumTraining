@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
@@ -17,7 +17,7 @@ namespace SeleniumTraining
 
 			char browser;
 			driverlaunch dl = new driverlaunch();
-			Console.WriteLine("Enter 'c' for chrome and 'e' for edge");
+			Console.WriteLine("Enter 'c' for chrome, 'e' for making computer enteries ");
 			browser = Console.ReadLine()[0];
 
 			switch (browser)
@@ -26,7 +26,7 @@ namespace SeleniumTraining
 					dl.chrome();
 					break;
 				case 'e':
-					dl.edge();
+					dl.chromeentries();
 					break;
 				default:
 					Console.WriteLine("Please enter correct option");
